@@ -1,0 +1,102 @@
+body
+{
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+}
+main{
+    width: 600px;
+    border: solid 1px var(--border-color);
+}
+header{
+    display: flex;
+    justify-content: end;
+    flex: 1;
+}
+header > nav
+{ 
+    display: flex;
+    flex-direction: column;
+    width:275px;
+    padding: 0 12px;
+}
+footer
+{
+    width:350px;
+    flex: 1;
+}
+header > nav p{
+    text-align: center;
+    margin-left: 16px;
+    margin-right: 20px;
+    font-size: 20px;
+    line-height: 24px;
+
+}
+header > nav > a
+{
+    color:black;
+    margin:4px 0;
+}
+
+header>nav>a>div:hover{
+    background-color: var(--hover-secondary);
+}
+
+
+header>nav>a>div{
+    border-radius: 9999px;
+    padding: 12px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: fit-content;
+    width: -moz-fit-content
+}
+header > nav > a  svg {
+    height:26.25px;
+    width: 26.25px;
+}
+
+.active{
+    display: none;
+}
+.btn
+{
+    margin:16px 0;
+    width: 90%;
+    display: block;
+    min-height: 52px;
+}
+.text-align-center
+{
+    text-align: center;
+}
+
+.sm-show
+{
+    display: none;
+
+}
+@media screen and (max-width:1199px){
+    header > nav{
+        width:88px;
+    }
+    header > nav > a  p{
+        display: none;
+    }
+    header > nav > a{
+        margin:0;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .sm-hide{
+        display: none;
+
+    }
+    .sm-show
+    {
+        display: block;
+    }
+}

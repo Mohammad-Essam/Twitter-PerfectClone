@@ -1,0 +1,66 @@
+.main   {
+    display: flex;
+    flex-wrap: wrap;
+}
+.back-image
+{
+    /* width:45vw; */
+    background-image: url(../images/back-twitter.png);
+    background-size: cover ;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+svg{
+    fill:white;
+    width:300px;
+}
+.controls{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 36px;
+    overflow: hidden;
+    gap: 16px;
+    justify-content: center;
+}
+.controls-btn   
+{   
+    max-width: 100%;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+p.description
+{
+    color:#555;
+    font-size: 8px;
+    width: 300px;
+}
+
+h1
+{
+    margin: 42px 0;
+}
+a
+{
+    color:black;
+}
+.splitter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 300px;
+    gap:8px;
+}
+.splitter hr    
+{
+    flex: 1;
+}
+.btn{
+    width:300px;
+    height: 40px;
+}

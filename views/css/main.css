@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'Franklin Gothic Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Franklin Gothic Regular'), url('FranklinGothic.woff') format('woff');
+}
+:root
+{
+    --primary-color:rgb(29, 155, 240);
+    --border-radius:9999px;
+    --hover-light:rgba(29,155,240,0.1);
+
+    --hover-primary:rgb(26,140,216);
+    --hover-secondary:rgb(230,230,230);
+
+    --width-btn-landing:300px;
+    --heigh-btn-landing:40px;
+    --border-color:rgb(207, 217, 222);
+}
+
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    font-weight: 100;
+    font-size: 15px;
+}
+a{
+    text-decoration: none;
+}
+p{
+    font-size: 17px;
+}
+h1{
+    font-size: 64px;
+    letter-spacing: 5px;
+    font-weight: 500;
+}
+h2
+{
+    font-size: 31px;
+    font-weight: 100;
+    /* font-family: 'cairo',sans-serif; */
+}
+.btn
+{
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-color);
+    font-size: 15px;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-primary
+{
+    color:white;
+    background-color: var(--primary-color);
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn-primary:hover
+{
+    background-color: var(--hover-primary);
+}
+
+h3{
+    font-size: 15px;
+    margin: 48px 0 0 0 ;
+}
+.hover-light:hover
+{
+
+    background-color: var(--hover-light);
+}
